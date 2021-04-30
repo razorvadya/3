@@ -1,0 +1,27 @@
+body, * {
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+}
+
+button{
+  border: 0;
+  cursor: pointer;
+}
+
+html{
+  font-size:100%;
+  @include media(desktop){
+    font-size: 1vw;
+  }
+  @include media(tablet1){
+    font-size:100%;
+  }
+
+}
+
+
+body{
+  width: 100%;
+  font: $primary-font;
+}

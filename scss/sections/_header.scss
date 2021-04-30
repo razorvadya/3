@@ -1,0 +1,195 @@
+.body {
+    background: url(../img/bg-body.png) no-repeat;
+    background-size: cover;
+    @include media(tablet1){
+        background: #FFF;
+    }
+
+}
+.header{
+    .nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        @include flex(row center);
+        @include media(tablet1){
+            
+        }
+        &__block{
+            @include flex(row center);
+
+            @include media(tablet){
+                margin: rem(48px) 0 0;
+            }
+            
+
+            @include media(tablet3){
+                flex-direction: column;
+            }
+            
+            &__right{
+                @include flex(row center);
+                @include media(tablet){
+                    flex-direction: column;
+                }
+            }
+        }
+        &__elem{
+            @include flex(column);
+            margin: 3.3rem 0 3.3rem 1.4rem;
+            @include media(mobile-m){
+                margin: 3.3rem 2rem 1.4rem;
+            }
+            @include media(mobile-l){
+                margin: 3.3rem 2rem 1.4rem;
+            }
+        }
+        &__text{
+            font: 0.7rem $primary-font;
+            color: #666;
+            @include media(tablet1){
+                font: 1rem $primary-font;
+            }
+            @include media(mobile-m){
+                font: 0.8rem $primary-font;
+                text-align:center;
+            }
+        }
+        &__img{
+            @include flex(row);
+            margin: 0.5rem 0 0 0;
+            @include media(tablet3){
+                justify-content: center;
+            }
+            @include media(mobile-m){
+                flex-direction: column;
+                align-items: center;
+            }
+            @include media(mobile-l){
+                margin: 1rem 0 0;
+            }
+
+            
+            
+            
+        }
+        &__in,&__war{
+            @include flex(row center);
+        }
+
+        &__war{
+            @include media(mobile-m){
+                margin: 1rem;
+            }
+        }
+        
+        &__intext{
+            @include flex(row center);
+            font: 700 0.7rem $primary-font;
+            margin: 0rem 0.8rem 0 0.5rem;
+            @include media(tablet1){
+                font: 700 1rem $primary-font;
+            }
+            @include media(mobile-l){
+                font: 700 0.8rem $primary-font;
+            }
+        }
+        &__price{
+            @include flex(row center);
+            justify-content: flex-end;
+            background: url(../img/price-cat.png) no-repeat 0 0;
+            width: 17.5rem;
+            height: 10rem;
+            background-size: $primary-contain;
+            @include media(tablet4){
+                background: none;
+                width: auto;
+                height:auto;
+            }
+            @include media(tablet2){
+                width: 22rem;
+            }
+            @include media(tablet1){
+                width: 25rem;
+            }
+            @include media(mobile-m){
+                width: auto;
+            }
+            @include media(mobile-l){
+                width: auto;
+            }
+            a{
+                font: 0.7rem $primary-font;
+                color: #cc0033;
+                text-transform: uppercase;
+                text-decoration: none;
+                border-bottom: 0.05rem dashed #cc0033;
+                padding: 0 0 0.4rem;
+                margin: 0 0 0 4.5rem;
+                @include media(tablet2){
+                    font: 1rem $primary-font;
+                    border-bottom: 0.1rem dashed #cc0033;
+                    margin: 0;
+                }
+                @include media(tablet1){
+                    font: 1.2rem $primary-font;
+                }
+                @include media(mobile-m){
+                    font: 1rem $primary-font;
+                }
+                @include media(mobile-l){
+                    font: 1rem $primary-font;
+                }
+            }
+        }
+        &__phones{
+            margin: 0 3.07rem;
+            @include media(tablet4){
+                margin: 1rem 3.07rem;
+            }
+            @include media(mobile-m){
+                margin: 1.5rem 3.07rem;
+            }
+            @include media(mobile-l){
+                margin: 1.5rem 3.07rem;
+            }
+        }
+        &__time{
+            @include flex(row center);
+            @include media(tablet4){
+                justify-content: center;
+            }
+            
+        }
+        &__circle{
+            background: #009933;
+            width: 0.52rem;
+            height: 0.52rem;
+            border-radius: 100%;
+        }
+        &__online{
+            font: 0.7rem $primary-font;
+            color: #009933;
+            padding: 0 0.68rem;
+            @include media(tablet1){
+                font: 1.2rem $primary-font;
+            }
+            @include media(mobile-m){
+                font: 1rem $primary-font;
+            }
+            @include media(mobile-l){
+                font: 1rem $primary-font;
+            }
+        }
+        &__phone{
+            @include flex(row center);
+        }
+        &__call{
+            font: 700 1rem $primary-font;
+            color: #333;
+            padding: 0.58rem 0.52rem;
+            @include media(tablet1){
+                font: 700 1.2rem $primary-font;
+            }
+        }
+    }
+}
